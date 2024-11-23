@@ -42,24 +42,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Pixabay API for randomized high-quality background image
-const apiKey = '47202390-1425d924895558884d51e7a3e';
-const query = 'nature'; // Query for background image
-const url = `https://pixabay.com/api/?key=${apiKey}&q=${query}&image_type=photo&orientation=horizontal&per_page=50`;
-
-fetch(url)
-    .then(response => response.json())
-    .then(data => {
-        if (data.hits.length > 0) {
-            const randomIndex = Math.floor(Math.random() * data.hits.length);
-            const imageUrl = data.hits[randomIndex].largeImageURL; // Use largeImageURL for FHD images
-            document.body.style.backgroundImage = `url(${imageUrl})`;
-            document.body.style.backgroundSize = 'cover';
-            document.body.style.backgroundPosition = 'center';
-            document.body.style.backgroundRepeat = 'no-repeat';
-        }
-    })
-    .catch(error => console.error('Error fetching background image:', error));
+// Use Picsum.photos API for randomized high-quality background image
+const imageUrl = 'https://picsum.photos/1920/1080';
+document.body.style.backgroundImage = `url(${imageUrl})`;
+document.body.style.backgroundSize = 'cover';
+document.body.style.backgroundPosition = 'center';
+document.body.style.backgroundRepeat = 'no-repeat';
 
 // More Features
 const moreFeatures = document.querySelector('.more-features');
