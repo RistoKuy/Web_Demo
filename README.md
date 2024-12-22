@@ -41,11 +41,3 @@ This is a web-based CV for Aristo Baadi, showcasing his education, experience, c
 ## License
 
 This project is licensed under the MIT License.
-
-## Contact
-
-For any inquiries, please contact Aristo Baadi at:
-- **Email**: aristo.baadi@gmail.com
-- **Phone**: +6281281951600
-- **GitHub**: [RistoKuy](https://github.com/RistoKuy)
-- **LinkedIn**: [Aristo Baadi](https://www.linkedin.com/in/aristo-baadi)
