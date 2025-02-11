@@ -139,14 +139,15 @@ body.dark-mode .profile-circle {
     max-width: 800px;
     width: 100%;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Soft blur effect */
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 body.dark-mode .container {
-    background-color: #2a2a2a;
+    background-color: rgba(42, 42, 42, 0.8); /* Semi-transparent background for dark mode */
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
 
