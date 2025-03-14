@@ -1,17 +1,17 @@
-// Fluid Animation
-function fluidAnimation() {
+// Responsive viewport height
+function setVH() {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 
-window.addEventListener('resize', fluidAnimation);
-fluidAnimation();
+window.addEventListener('resize', setVH);
+setVH();
 
-// Dark Mode
+// Dark Mode Toggle
 const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]');
 const body = document.querySelector('body');
 
-// Check for saved user preference, if any, on load of the website
+// Check for saved user preference
 const currentTheme = localStorage.getItem('theme');
 if (currentTheme) {
     body.classList.add(currentTheme);
@@ -35,24 +35,65 @@ toggleSwitch.addEventListener('change', () => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
     });
 });
 
-// Use Picsum.photos API for randomized high-quality background image
-const imageUrl = 'https://picsum.photos/1920/1080';
-document.body.style.backgroundImage = `url(${imageUrl})`;
-document.body.style.backgroundSize = 'cover';
-document.body.style.backgroundPosition = 'center';
-document.body.style.backgroundRepeat = 'no-repeat';
+// Simple animations on scroll
+document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('[data-aos]');
+    
+    const observerOptions = {
+        threshold: 0.1
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const delay = entry.target.getAttribute('data-aos-delay') || 0;
+                setTimeout(() => {
+                    entry.target.classList.add('animated');
+                }, delay);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    elements.forEach(element => {
+        observer.observe(element);
+        element.classList.add('aos-init');
+    });
 
-// More Features
-const moreFeatures = document.querySelector('.more-features');
-const moreFeaturesContent = document.querySelector('.more-features-content');
-
-moreFeatures.addEventListener('click', () => {
-    moreFeaturesContent.classList.toggle('show');
+    // Add CSS for animations to the head
+    const style = document.createElement('style');
+    style.textContent = `
+        .aos-init {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .highlight {
+            color: #4361ee;
+            font-weight: 500;
+        }
+        body.dark-mode .highlight {
+            color: #4cc9f0;
+        }
+        .contact-list .icon {
+            display: inline-block;
+            width: 25px;
+            margin-right: 5px;
+        }
+        .profile-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    `;
+    document.head.appendChild(style);
 });
