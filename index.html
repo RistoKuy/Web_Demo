@@ -22,84 +22,119 @@
     <script src="script.js" defer></script>
     <meta name="description" content="Professional CV of Aristo Baadi, Information Systems student at Universitas Mercu Buana Jakarta">
 </head>
-<body class="bg-gradient-to-br from-bg-light to-bg-light-end text-gray-800 flex justify-center items-center min-h-screen p-8 font-poppins text-base leading-relaxed transition-all duration-300 ease-in-out dark:from-bg-dark dark:to-bg-dark-end dark:text-gray-200">
+<body class="bg-gradient-to-br from-bg-light to-bg-light-end text-gray-800 min-h-screen font-poppins text-base leading-relaxed transition-all duration-300 ease-in-out dark:from-bg-dark dark:to-bg-dark-end dark:text-gray-200">
+    <!-- Dark mode toggle -->
     <div class="fixed top-5 right-5 z-50" aria-label="Dark mode toggle">
         <input type="checkbox" id="darkModeToggle" class="hidden">
         <label for="darkModeToggle" class="toggle-switch-label" title="Toggle dark/light mode"></label>
-    </div>
-    <div class="max-w-4xl w-full p-10 bg-white/90 backdrop-blur-md rounded-2xl shadow-lg transition-all duration-300 ease-in-out dark:bg-gray-900/90">
-        <!-- Profile Information -->
-        <div class="text-center mb-10">
+    </div>    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-md w-full">
+      <div class="max-w-4xl mx-auto flex justify-between items-center py-3 px-6">
+        <span class="font-bold text-primary dark:text-primary-dark text-lg tracking-tight">Aristo Baadi</span>
+        <ul class="hidden md:flex gap-6 text-base font-medium">
+          <li><a href="#about" class="hover:text-primary dark:hover:text-primary-dark transition">About</a></li>
+          <li><a href="#education" class="hover:text-primary dark:hover:text-primary-dark transition">Education</a></li>
+          <li><a href="#skills" class="hover:text-primary dark:hover:text-primary-dark transition">Skills</a></li>
+          <li><a href="#certifications" class="hover:text-primary dark:hover:text-primary-dark transition">Certifications</a></li>
+          <li><a href="#projects" class="hover:text-primary dark:hover:text-primary-dark transition">Projects</a></li>
+          <li><a href="#contact" class="hover:text-primary dark:hover:text-primary-dark transition">Contact</a></li>
+        </ul>
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-button" class="md:hidden p-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white/90 dark:bg-gray-900/90 backdrop-blur-md">
+        <div class="px-6 py-3 space-y-2">
+          <a href="#about" class="block py-2 hover:text-primary dark:hover:text-primary-dark transition">About</a>
+          <a href="#education" class="block py-2 hover:text-primary dark:hover:text-primary-dark transition">Education</a>
+          <a href="#skills" class="block py-2 hover:text-primary dark:hover:text-primary-dark transition">Skills</a>
+          <a href="#certifications" class="block py-2 hover:text-primary dark:hover:text-primary-dark transition">Certifications</a>
+          <a href="#projects" class="block py-2 hover:text-primary dark:hover:text-primary-dark transition">Projects</a>
+          <a href="#contact" class="block py-2 hover:text-primary dark:hover:text-primary-dark transition">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Main Content -->
+    <div class="w-full">
+      <main class="max-w-4xl mx-auto w-full px-4 py-10">
+        <!-- About Section -->
+        <section id="about" class="mb-20 scroll-mt-32 pt-10">
+          <div class="text-center">
             <div class="w-32 h-32 overflow-hidden rounded-full mx-auto mb-6 flex justify-center items-center shadow-md transition-transform duration-300 ease-in-out hover:scale-105">
-                <img src="assets/img/profile.jpeg" alt="Profile Picture of Aristo Baadi" class="w-full h-full object-cover">
+              <img src="assets/img/profile.jpeg" alt="Profile Picture of Aristo Baadi" class="w-full h-full object-cover">
             </div>
-            <div class="mb-10">
-                <h1 class="text-4xl font-semibold mb-2 text-primary dark:text-primary-dark tracking-tight">Aristo Baadi</h1>
-                <p class="text-gray-600 max-w-md mx-auto dark:text-gray-400">Information Systems Student at Universitas Mercu Buana Jakarta</p>
-            </div>
-        </div>
-          <!-- Additional Information -->
-        <div class="mb-10">
-            <div class="flex flex-wrap justify-between gap-6">
-                <div class="flex-1 min-w-[300px] bg-white/70 p-6 rounded-xl shadow transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-md transform opacity-0 translate-y-5 transition-opacity transition-transform duration-600 ease-out dark:bg-gray-800/70" data-aos="fade-up">
-                    <h2 class="text-xl font-semibold mb-5 text-primary dark:text-primary-dark relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-10 after:bg-primary dark:after:bg-primary-dark">EDUCATION</h2>
-                    <ul class="pl-1">
-                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark">
-                            <a href="https://www.mercubuana.ac.id/" target="_blank" rel="noopener" class="text-primary dark:text-primary-dark no-underline relative transition-all duration-300 ease-in-out after:content-[''] after:absolute after:w-0 after:h-px after:bottom-0 after:left-0 after:bg-primary dark:after:bg-primary-dark after:transition-width after:duration-300 hover:after:w-full">Universitas Mercu Buana Jakarta</a><br>
-                            <span class="text-primary font-medium dark:text-primary-dark">Current GPA: 3.89</span><br>
-                            Year of Graduation: 2027
-                        </li>
-                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark">
-                            <a href="https://sman112jakarta.sch.id/" target="_blank" rel="noopener" class="text-primary dark:text-primary-dark no-underline relative transition-all duration-300 ease-in-out after:content-[''] after:absolute after:w-0 after:h-px after:bottom-0 after:left-0 after:bg-primary dark:after:bg-primary-dark after:transition-width after:duration-300 hover:after:w-full">SMA Negeri 112 Jakarta</a><br>
-                            <span class="text-primary font-medium dark:text-primary-dark">Average Score: 90.03</span><br>
-                            Graduated in: 2023
-                        </li>
-                    </ul>
-                </div>
-                <div class="flex-1 min-w-[300px] bg-white/70 p-6 rounded-xl shadow transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-md transform opacity-0 translate-y-5 transition-opacity transition-transform duration-600 ease-out dark:bg-gray-800/70" data-aos="fade-up" data-aos-delay="100">
-                    <h2 class="text-xl font-semibold mb-5 text-primary dark:text-primary-dark relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-10 after:bg-primary dark:after:bg-primary-dark">SKILLS</h2>
-                    <ul class="pl-1">
-                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark">IT Support Specialist</li>
-                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark">Proficient AI Prompter</li>
-                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark">Visual Studio Code</li>
-                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark">Windows OS Troubleshooting</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-          <div>
-            <div class="flex flex-wrap justify-between gap-6">
-                <div class="flex-1 min-w-[300px] bg-white/70 p-6 rounded-xl shadow transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-md transform opacity-0 translate-y-5 transition-opacity transition-transform duration-600 ease-out dark:bg-gray-800/70" data-aos="fade-up">
-                    <h2 class="text-xl font-semibold mb-5 text-primary dark:text-primary-dark relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-10 after:bg-primary dark:after:bg-primary-dark">CERTIFICATIONS</h2>
-                    <ul class="pl-1">
-                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark">
-                            ORACLE: Java Foundations<br>
-                            <span class="text-primary font-medium dark:text-primary-dark">Year: 2024</span>
-                        </li>
-                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark">
-                            CISCO: IoT Fundamentals<br>
-                            <span class="text-primary font-medium dark:text-primary-dark">Year: 2023</span>
-                        </li>
-                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark">
-                            CISCO: Introduction to Cybersecurity<br>
-                            <span class="text-primary font-medium dark:text-primary-dark">Year: 2023</span>
-                        </li>
-                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark">
-                            ELSKILL English Course: TOEFL<br>
-                            <span class="text-primary font-medium dark:text-primary-dark">Score: 520</span> (2023)
-                        </li>
-                    </ul>
-                    <p class="mt-4">View all certifications <a href="https://1drv.ms/f/c/a5bf720936d8def4/ElJ0jwUzAMtFvJ-yDhHZKccBIvYGHmVcWqSfUYx8-Rbrzg?e=fgdsd0" target="_blank" rel="noopener" class="text-primary dark:text-primary-dark no-underline relative transition-all duration-300 ease-in-out after:content-[''] after:absolute after:w-0 after:h-px after:bottom-0 after:left-0 after:bg-primary dark:after:bg-primary-dark after:transition-width after:duration-300 hover:after:w-full">here</a></p>
-                </div>
-                <div class="flex-1 min-w-[300px] bg-white/70 p-6 rounded-xl shadow transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-md transform opacity-0 translate-y-5 transition-opacity transition-transform duration-600 ease-out dark:bg-gray-800/70" data-aos="fade-up" data-aos-delay="100">
-                    <h2 class="text-xl font-semibold mb-5 text-primary dark:text-primary-dark relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-10 after:bg-primary dark:after:bg-primary-dark">CONTACT</h2>
-                    <ul class="pl-1">
-                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark"><span class="inline-block w-6 mr-1">💻</span> <a href="https://github.com/RistoKuy" target="_blank" rel="noopener" class="text-primary dark:text-primary-dark no-underline relative transition-all duration-300 ease-in-out after:content-[''] after:absolute after:w-0 after:h-px after:bottom-0 after:left-0 after:bg-primary dark:after:bg-primary-dark after:transition-width after:duration-300 hover:after:w-full">GitHub</a></li>
-                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark"><span class="inline-block w-6 mr-1">🔗</span> <a href="https://www.linkedin.com/in/aristo-baadi" target="_blank" rel="noopener" class="text-primary dark:text-primary-dark no-underline relative transition-all duration-300 ease-in-out after:content-[''] after:absolute after:w-0 after:h-px after:bottom-0 after:left-0 after:bg-primary dark:after:bg-primary-dark after:transition-width after:duration-300 hover:after:w-full">LinkedIn</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>                
+            <h1 class="text-4xl font-semibold mb-2 text-primary dark:text-primary-dark tracking-tight">Aristo Baadi</h1>
+            <p class="text-gray-600 max-w-md mx-auto dark:text-gray-400">Information Systems Student at Universitas Mercu Buana Jakarta</p>
+            <p class="mt-4 max-w-2xl mx-auto text-base text-gray-700 dark:text-gray-300">I am a passionate Information Systems student with a strong interest in technology, AI, and IT support. I enjoy learning new things, solving problems, and collaborating on impactful projects. My goal is to leverage my skills to contribute to innovative solutions in the tech industry.</p>
+          </div>
+        </section>
+        <!-- Education Section -->
+        <section id="education" class="mb-20 scroll-mt-24">
+          <h2 class="text-xl font-semibold mb-5 text-primary dark:text-primary-dark relative pb-1">EDUCATION</h2>
+          <ul class="pl-1">
+            <li class="mb-6">
+              <a href="https://www.mercubuana.ac.id/" target="_blank" rel="noopener" class="text-primary dark:text-primary-dark font-medium">Universitas Mercu Buana Jakarta</a><br>
+              <span class="text-primary font-medium dark:text-primary-dark">Current GPA: 3.89</span><br>
+              Year of Graduation: 2027
+            </li>
+            <li>
+              <a href="https://sman112jakarta.sch.id/" target="_blank" rel="noopener" class="text-primary dark:text-primary-dark font-medium">SMA Negeri 112 Jakarta</a><br>
+              <span class="text-primary font-medium dark:text-primary-dark">Average Score: 90.03</span><br>
+              Graduated in: 2023
+            </li>
+          </ul>
+        </section>
+        <!-- Skills Section -->
+        <section id="skills" class="mb-20 scroll-mt-24">
+          <h2 class="text-xl font-semibold mb-5 text-primary dark:text-primary-dark relative pb-1">SKILLS</h2>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 pl-1">
+            <li class="mb-2">IT Support Specialist</li>
+            <li class="mb-2">Proficient AI Prompter</li>
+            <li class="mb-2">Visual Studio Code</li>
+            <li class="mb-2">Windows OS Troubleshooting</li>
+            <li class="mb-2">Teamwork & Communication</li>
+            <li class="mb-2">Problem Solving</li>
+          </ul>
+        </section>
+        <!-- Certifications Section -->
+        <section id="certifications" class="mb-20 scroll-mt-24">
+          <h2 class="text-xl font-semibold mb-5 text-primary dark:text-primary-dark relative pb-1">CERTIFICATIONS</h2>
+          <ul class="pl-1">
+            <li class="mb-4">ORACLE: Java Foundations <span class="text-primary font-medium dark:text-primary-dark">(2024)</span></li>
+            <li class="mb-4">CISCO: IoT Fundamentals <span class="text-primary font-medium dark:text-primary-dark">(2023)</span></li>
+            <li class="mb-4">CISCO: Introduction to Cybersecurity <span class="text-primary font-medium dark:text-primary-dark">(2023)</span></li>
+            <li class="mb-4">ELSKILL English Course: TOEFL <span class="text-primary font-medium dark:text-primary-dark">Score: 520</span> (2023)</li>
+          </ul>
+          <p class="mt-4">View all certifications <a href="https://1drv.ms/f/c/a5bf720936d8def4/ElJ0jwUzAMtFvJ-yDhHZKccBIvYGHmVcWqSfUYx8-Rbrzg?e=fgdsd0" target="_blank" rel="noopener" class="text-primary dark:text-primary-dark underline hover:opacity-80">here</a></p>
+        </section>
+        <!-- Projects Section -->
+        <section id="projects" class="mb-20 scroll-mt-24">
+          <h2 class="text-xl font-semibold mb-5 text-primary dark:text-primary-dark relative pb-1">PROJECTS</h2>
+          <ul class="pl-1">
+            <li class="mb-4">
+              <span class="font-medium">Personal Portfolio Website</span> – Built a modern, responsive portfolio using HTML, CSS, and JavaScript to showcase my skills and projects.
+            </li>
+            <li class="mb-4">
+              <span class="font-medium">AI Prompt Engineering Demos</span> – Created and shared effective AI prompts for productivity and learning.
+            </li>
+            <li class="mb-4">
+              <span class="font-medium">IT Support Knowledge Base</span> – Compiled troubleshooting guides and solutions for common Windows OS issues.
+            </li>
+          </ul>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="mb-10 scroll-mt-24">
+          <h2 class="text-xl font-semibold mb-5 text-primary dark:text-primary-dark relative pb-1">CONTACT</h2>
+          <ul class="pl-1">
+            <li class="mb-4 flex items-center"><span class="inline-block w-6 mr-1">💻</span> <a href="https://github.com/RistoKuy" target="_blank" rel="noopener" class="text-primary dark:text-primary-dark underline hover:opacity-80">GitHub</a></li>
+            <li class="mb-4 flex items-center"><span class="inline-block w-6 mr-1">🔗</span> <a href="https://www.linkedin.com/in/aristo-baadi" target="_blank" rel="noopener" class="text-primary dark:text-primary-dark underline hover:opacity-80">LinkedIn</a></li>
+          </ul>
+        </section>
+      </main>
+    </div>
 </body>
 </html>

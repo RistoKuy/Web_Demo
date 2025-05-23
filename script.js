@@ -39,14 +39,33 @@ toggleSwitch.addEventListener('change', () => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+        
+        // Close mobile menu if open
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.add('hidden');
+        }
     });
 });
 
-// Simple animations on scroll
+// Mobile menu toggle
 document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+    
+    // ...existing animation code...
     const elements = document.querySelectorAll('[data-aos]');
     
     const observerOptions = {

@@ -29,11 +29,7 @@ html {
 body {
   background: linear-gradient(135deg, var(--color-bg-light) 0%, var(--color-bg-light-end) 100%);
   color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
-  padding: 2rem;
   transition: all 0.3s ease;
 }
 
