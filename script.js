@@ -8,26 +8,30 @@ window.addEventListener('resize', setVH);
 setVH();
 
 // Dark Mode Toggle
-const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]');
+const toggleSwitch = document.querySelector('input[type="checkbox"]');
 const body = document.querySelector('body');
+const toggleLabel = document.querySelector('.toggle-switch-label');
+const toggleButton = document.querySelector('.toggle-switch-button');
 
 // Check for saved user preference
 const currentTheme = localStorage.getItem('theme');
 if (currentTheme) {
-    body.classList.add(currentTheme);
-
-    if (currentTheme === 'dark-mode') {
+    if (currentTheme === 'dark') {
+        body.classList.add('dark');
         toggleSwitch.checked = true;
+        toggleLabel.classList.add('toggle-switch-label-checked');
     }
 }
 
 toggleSwitch.addEventListener('change', () => {
     if (toggleSwitch.checked) {
-        body.classList.add('dark-mode');
-        localStorage.setItem('theme', 'dark-mode');
+        body.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+        toggleLabel.classList.add('toggle-switch-label-checked');
     } else {
-        body.classList.remove('dark-mode');
-        localStorage.setItem('theme', 'light-mode');
+        body.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+        toggleLabel.classList.remove('toggle-switch-label-checked');
     }
 });
 
@@ -54,7 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (entry.isIntersecting) {
                 const delay = entry.target.getAttribute('data-aos-delay') || 0;
                 setTimeout(() => {
-                    entry.target.classList.add('animated');
+                    entry.target.classList.remove('opacity-0', 'translate-y-5');
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
                 }, delay);
                 observer.unobserve(entry.target);
             }
@@ -63,37 +68,24 @@ document.addEventListener('DOMContentLoaded', () => {
     
     elements.forEach(element => {
         observer.observe(element);
-        element.classList.add('aos-init');
     });
 
-    // Add CSS for animations to the head
-    const style = document.createElement('style');
-    style.textContent = `
-        .aos-init {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    // Add the toggle switch button
+    const label = document.querySelector('.toggle-switch-label');
+    const buttonSpan = document.createElement('span');
+    buttonSpan.className = 'toggle-switch-button';
+    
+    if (toggleSwitch.checked) {
+        buttonSpan.classList.add('toggle-switch-button-checked');
+    }
+    
+    label.appendChild(buttonSpan);
+    
+    toggleSwitch.addEventListener('change', () => {
+        if (toggleSwitch.checked) {
+            buttonSpan.classList.add('toggle-switch-button-checked');
+        } else {
+            buttonSpan.classList.remove('toggle-switch-button-checked');
         }
-        .animated {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .highlight {
-            color: #4361ee;
-            font-weight: 500;
-        }
-        body.dark-mode .highlight {
-            color: #4cc9f0;
-        }
-        .contact-list .icon {
-            display: inline-block;
-            width: 25px;
-            margin-right: 5px;
-        }
-        .profile-section {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-    `;
-    document.head.appendChild(style);
+    });
 });

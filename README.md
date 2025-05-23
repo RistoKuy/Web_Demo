@@ -9,9 +9,8 @@ Visit the live website: [https://ristokuy.github.io/Web_Demo/](https://ristokuy.
 ## Features
 
 - **Dark Mode & Light Mode**: Toggle between dark and light themes with visual icon indicators.
-- **Responsive Design**: Adaptable layout for different screen sizes.
+- **Responsive Design**: Adaptable layout for different screen sizes using Tailwind CSS.
 - **Smooth Scrolling**: Smooth transition when navigating to different sections.
-- **Randomized Background Image**: High-quality background image from Picsum.photos API.
 - **Profile Information**: Display profile picture and basic information.
 - **Education**: List of educational qualifications with links.
 - **Experience**: List of professional experiences.
@@ -22,6 +21,7 @@ Visit the live website: [https://ristokuy.github.io/Web_Demo/](https://ristokuy.
 
 - **HTML**: Structure of the web page.
 - **CSS**: Styling and layout.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
 - **JavaScript**: Interactivity and dynamic features.
 
 ## How to Use
@@ -34,14 +34,32 @@ Visit the live website: [https://ristokuy.github.io/Web_Demo/](https://ristokuy.
     ```bash
     cd Web_Demo
     ```
-3. **Open `index.html` in your web browser**.
+3. **Install dependencies**:
+    ```bash
+    npm install
+    ```
+4. **Start the development server**:
+    ```bash
+    npm start
+    ```
+
+## Development
+
+- **Build CSS**:
+    ```bash
+    npm run build
+    ```
+- **Watch for CSS changes**:
+    ```bash
+    npm run watch
+    ```
 
 ## Customization
 
 - **Profile Picture**: Replace the image at `/assets/img/profile.jpeg`.
 - **Theme Icons**: Custom icons for dark/light mode in `/assets/icon/`.
-- **Background Image**: Change the URL in `script.js` to use a different image source.
 - **Content**: Update the HTML content in `index.html` to reflect your own information.
+- **Tailwind Config**: Modify the `tailwind.config.js` file to customize the theme.
 
 ## License
 

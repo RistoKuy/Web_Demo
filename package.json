@@ -1,0 +1,30 @@
+{
+  "name": "web_demo",
+  "version": "1.0.0",
+  "description": "This is a web-based CV for Aristo Baadi, showcasing his education, experience, certifications, and contact information. The web demo includes a dark mode toggle with icons, smooth scrolling, and responsive design.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./tailwind.css -o ./style.css",
+    "watch": "tailwindcss -i ./tailwind.css -o ./style.css --watch",
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RistoKuy/Web_Demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RistoKuy/Web_Demo/issues"
+  },
+  "homepage": "https://github.com/RistoKuy/Web_Demo#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "live-server": "^1.2.2",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.7"
+  }
+}

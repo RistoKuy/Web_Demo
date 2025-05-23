@@ -5,87 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Aristo Baadi</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#4361ee',
+              'primary-dark': '#4cc9f0',
+            }
+          }
+        }
+      }
+    </script>
     <script src="script.js" defer></script>
     <meta name="description" content="Professional CV of Aristo Baadi, Information Systems student at Universitas Mercu Buana Jakarta">
 </head>
-<body>
-    <div class="toggle-switch" aria-label="Dark mode toggle">
-        <input type="checkbox" id="darkModeToggle">
-        <label for="darkModeToggle" title="Toggle dark/light mode"></label>
+<body class="bg-gradient-to-br from-bg-light to-bg-light-end text-gray-800 flex justify-center items-center min-h-screen p-8 font-poppins text-base leading-relaxed transition-all duration-300 ease-in-out dark:from-bg-dark dark:to-bg-dark-end dark:text-gray-200">
+    <div class="fixed top-5 right-5 z-50" aria-label="Dark mode toggle">
+        <input type="checkbox" id="darkModeToggle" class="hidden">
+        <label for="darkModeToggle" class="toggle-switch-label" title="Toggle dark/light mode"></label>
     </div>
-    <div class="container">
+    <div class="max-w-4xl w-full p-10 bg-white/90 backdrop-blur-md rounded-2xl shadow-lg transition-all duration-300 ease-in-out dark:bg-gray-900/90">
         <!-- Profile Information -->
-        <div class="profile-section">
-            <div class="profile-circle">
-                <img src="assets/img/profile.jpeg" alt="Profile Picture of Aristo Baadi">
+        <div class="text-center mb-10">
+            <div class="w-32 h-32 overflow-hidden rounded-full mx-auto mb-6 flex justify-center items-center shadow-md transition-transform duration-300 ease-in-out hover:scale-105">
+                <img src="assets/img/profile.jpeg" alt="Profile Picture of Aristo Baadi" class="w-full h-full object-cover">
             </div>
-            <div class="header">
-                <h1>Aristo Baadi</h1>
-                <p>Information Systems Student at Universitas Mercu Buana Jakarta</p>
+            <div class="mb-10">
+                <h1 class="text-4xl font-semibold mb-2 text-primary dark:text-primary-dark tracking-tight">Aristo Baadi</h1>
+                <p class="text-gray-600 max-w-md mx-auto dark:text-gray-400">Information Systems Student at Universitas Mercu Buana Jakarta</p>
             </div>
         </div>
-        
-        <!-- Additional Information -->
-        <div class="main">
-            <div class="main-content">
-                <div class="main-content-left" data-aos="fade-up">
-                    <h2>EDUCATION</h2>
-                    <ul>
-                        <li>
-                            <a href="https://www.mercubuana.ac.id/" target="_blank" rel="noopener">Universitas Mercu Buana Jakarta</a><br>
-                            <span class="highlight">Current GPA: 3.89</span><br>
+          <!-- Additional Information -->
+        <div class="mb-10">
+            <div class="flex flex-wrap justify-between gap-6">
+                <div class="flex-1 min-w-[300px] bg-white/70 p-6 rounded-xl shadow transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-md transform opacity-0 translate-y-5 transition-opacity transition-transform duration-600 ease-out dark:bg-gray-800/70" data-aos="fade-up">
+                    <h2 class="text-xl font-semibold mb-5 text-primary dark:text-primary-dark relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-10 after:bg-primary dark:after:bg-primary-dark">EDUCATION</h2>
+                    <ul class="pl-1">
+                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark">
+                            <a href="https://www.mercubuana.ac.id/" target="_blank" rel="noopener" class="text-primary dark:text-primary-dark no-underline relative transition-all duration-300 ease-in-out after:content-[''] after:absolute after:w-0 after:h-px after:bottom-0 after:left-0 after:bg-primary dark:after:bg-primary-dark after:transition-width after:duration-300 hover:after:w-full">Universitas Mercu Buana Jakarta</a><br>
+                            <span class="text-primary font-medium dark:text-primary-dark">Current GPA: 3.89</span><br>
                             Year of Graduation: 2027
                         </li>
-                        <li>
-                            <a href="https://sman112jakarta.sch.id/" target="_blank" rel="noopener">SMA Negeri 112 Jakarta</a><br>
-                            <span class="highlight">Average Score: 90.03</span><br>
+                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark">
+                            <a href="https://sman112jakarta.sch.id/" target="_blank" rel="noopener" class="text-primary dark:text-primary-dark no-underline relative transition-all duration-300 ease-in-out after:content-[''] after:absolute after:w-0 after:h-px after:bottom-0 after:left-0 after:bg-primary dark:after:bg-primary-dark after:transition-width after:duration-300 hover:after:w-full">SMA Negeri 112 Jakarta</a><br>
+                            <span class="text-primary font-medium dark:text-primary-dark">Average Score: 90.03</span><br>
                             Graduated in: 2023
                         </li>
                     </ul>
                 </div>
-                <div class="main-content-right" data-aos="fade-up" data-aos-delay="100">
-                    <h2>SKILLS</h2>
-                    <ul>
-                        <li>IT Support Specialist</li>
-                        <li>Proficient AI Prompter</li>
-                        <li>Visual Studio Code</li>
-                        <li>Windows OS Troubleshooting</li>
+                <div class="flex-1 min-w-[300px] bg-white/70 p-6 rounded-xl shadow transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-md transform opacity-0 translate-y-5 transition-opacity transition-transform duration-600 ease-out dark:bg-gray-800/70" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="text-xl font-semibold mb-5 text-primary dark:text-primary-dark relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-10 after:bg-primary dark:after:bg-primary-dark">SKILLS</h2>
+                    <ul class="pl-1">
+                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark">IT Support Specialist</li>
+                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark">Proficient AI Prompter</li>
+                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark">Visual Studio Code</li>
+                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark">Windows OS Troubleshooting</li>
                     </ul>
                 </div>
             </div>
         </div>
-        
-        <div class="footer">
-            <div class="footer-content">
-                <div class="footer-content-left" data-aos="fade-up">
-                    <h2>CERTIFICATIONS</h2>
-                    <ul>
-                        <li>
+          <div>
+            <div class="flex flex-wrap justify-between gap-6">
+                <div class="flex-1 min-w-[300px] bg-white/70 p-6 rounded-xl shadow transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-md transform opacity-0 translate-y-5 transition-opacity transition-transform duration-600 ease-out dark:bg-gray-800/70" data-aos="fade-up">
+                    <h2 class="text-xl font-semibold mb-5 text-primary dark:text-primary-dark relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-10 after:bg-primary dark:after:bg-primary-dark">CERTIFICATIONS</h2>
+                    <ul class="pl-1">
+                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark">
                             ORACLE: Java Foundations<br>
-                            <span class="highlight">Year: 2024</span>
+                            <span class="text-primary font-medium dark:text-primary-dark">Year: 2024</span>
                         </li>
-                        <li>
+                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark">
                             CISCO: IoT Fundamentals<br>
-                            <span class="highlight">Year: 2023</span>
+                            <span class="text-primary font-medium dark:text-primary-dark">Year: 2023</span>
                         </li>
-                        <li>
+                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark">
                             CISCO: Introduction to Cybersecurity<br>
-                            <span class="highlight">Year: 2023</span>
+                            <span class="text-primary font-medium dark:text-primary-dark">Year: 2023</span>
                         </li>
-                        <li>
+                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark">
                             ELSKILL English Course: TOEFL<br>
-                            <span class="highlight">Score: 520</span> (2023)
+                            <span class="text-primary font-medium dark:text-primary-dark">Score: 520</span> (2023)
                         </li>
                     </ul>
-                    <p>View all certifications <a href="https://1drv.ms/f/c/a5bf720936d8def4/ElJ0jwUzAMtFvJ-yDhHZKccBIvYGHmVcWqSfUYx8-Rbrzg?e=fgdsd0" target="_blank" rel="noopener">here</a></p>
+                    <p class="mt-4">View all certifications <a href="https://1drv.ms/f/c/a5bf720936d8def4/ElJ0jwUzAMtFvJ-yDhHZKccBIvYGHmVcWqSfUYx8-Rbrzg?e=fgdsd0" target="_blank" rel="noopener" class="text-primary dark:text-primary-dark no-underline relative transition-all duration-300 ease-in-out after:content-[''] after:absolute after:w-0 after:h-px after:bottom-0 after:left-0 after:bg-primary dark:after:bg-primary-dark after:transition-width after:duration-300 hover:after:w-full">here</a></p>
                 </div>
-                <div class="footer-content-right" data-aos="fade-up" data-aos-delay="100">
-                    <h2>CONTACT</h2>
-                    <ul class="contact-list">
-                        <li><span class="icon">✉️</span> aristo.baadi@gmail.com</li>
-                        <li><span class="icon">📱</span> +6281281951600</li>
-                        <li><span class="icon">💻</span> <a href="https://github.com/RistoKuy" target="_blank" rel="noopener">GitHub</a></li>
-                        <li><span class="icon">🔗</span> <a href="https://www.linkedin.com/in/aristo-baadi" target="_blank" rel="noopener">LinkedIn</a></li>
+                <div class="flex-1 min-w-[300px] bg-white/70 p-6 rounded-xl shadow transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-md transform opacity-0 translate-y-5 transition-opacity transition-transform duration-600 ease-out dark:bg-gray-800/70" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="text-xl font-semibold mb-5 text-primary dark:text-primary-dark relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-10 after:bg-primary dark:after:bg-primary-dark">CONTACT</h2>
+                    <ul class="pl-1">
+                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark"><span class="inline-block w-6 mr-1">✉️</span> aristo.baadi@gmail.com</li>
+                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark"><span class="inline-block w-6 mr-1">📱</span> +6281281951600</li>
+                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark"><span class="inline-block w-6 mr-1">💻</span> <a href="https://github.com/RistoKuy" target="_blank" rel="noopener" class="text-primary dark:text-primary-dark no-underline relative transition-all duration-300 ease-in-out after:content-[''] after:absolute after:w-0 after:h-px after:bottom-0 after:left-0 after:bg-primary dark:after:bg-primary-dark after:transition-width after:duration-300 hover:after:w-full">GitHub</a></li>
+                        <li class="mb-4 relative pl-5 transition-transform duration-200 ease-in-out hover:translate-x-1 before:content-['•'] before:text-primary before:absolute before:left-0 before:top-0 dark:before:text-primary-dark"><span class="inline-block w-6 mr-1">🔗</span> <a href="https://www.linkedin.com/in/aristo-baadi" target="_blank" rel="noopener" class="text-primary dark:text-primary-dark no-underline relative transition-all duration-300 ease-in-out after:content-[''] after:absolute after:w-0 after:h-px after:bottom-0 after:left-0 after:bg-primary dark:after:bg-primary-dark after:transition-width after:duration-300 hover:after:w-full">LinkedIn</a></li>
                     </ul>
                 </div>
             </div>
