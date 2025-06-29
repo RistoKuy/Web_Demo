@@ -5,8 +5,9 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss -i ./tailwind.css -o ./style.css",
-    "watch": "tailwindcss -i ./tailwind.css -o ./style.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./style.css",
+    "watch": "npx @tailwindcss/cli -i ./src/input.css -o ./style.css --watch",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./style.css --watch",
     "start": "live-server"
   },
   "repository": {
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/RistoKuy/Web_Demo#readme",
   "devDependencies": {
+    "@tailwindcss/cli": "^4.1.11",
     "autoprefixer": "^10.4.21",
     "live-server": "^1.2.2",
     "postcss": "^8.5.3",
