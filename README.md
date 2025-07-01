@@ -1,6 +1,6 @@
 # Web Demo - Aristo Baadi's CV
 
-This is a web-based CV for Aristo Baadi, showcasing his education, experience, certifications, and contact information. The web demo includes a dark mode toggle with icons, smooth scrolling, and responsive design.
+This is a web-based CV for Aristo Baadi, showcasing his education, skills, certifications, and projects. The project is a single-page application built with HTML and Tailwind CSS, featuring a responsive, dark-mode-only design.
 
 ## Live Demo
 
@@ -8,21 +8,22 @@ Visit the live website: [https://ristokuy.github.io/Web_Demo/](https://ristokuy.
 
 ## Features
 
-- **Dark Mode & Light Mode**: Toggle between dark and light themes with visual icon indicators.
+- **Dark Mode**: A sleek, modern dark theme.
 - **Responsive Design**: Adaptable layout for different screen sizes using Tailwind CSS.
 - **Smooth Scrolling**: Smooth transition when navigating to different sections.
-- **Profile Information**: Display profile picture and basic information.
-- **Education**: List of educational qualifications with links.
-- **Experience**: List of professional experiences.
-- **Certifications**: List of certifications with a link to view details.
-- **Contact Information**: Email, phone, GitHub, and LinkedIn links.
+- **Single-File Application**: All HTML, CSS, and JavaScript are contained within a single `index.html` file for simplicity.
+- **Profile Information**: Displays profile picture and basic information.
+- **Education**: Lists educational qualifications with links.
+- **Skills**: Showcases technical and soft skills.
+- **Certifications**: Lists certifications with a link to view details.
+- **Projects**: Highlights key projects.
+- **Contact Information**: Links to GitHub and LinkedIn.
 
 ## Technologies Used
 
 - **HTML**: Structure of the web page.
-- **CSS**: Styling and layout.
-- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
-- **JavaScript**: Interactivity and dynamic features.
+- **Tailwind CSS CDN**: Utility-first CSS framework for rapid UI development.
+- **JavaScript**: Embedded for interactivity (mobile menu and smooth scrolling).
 
 ## How to Use
 
@@ -34,33 +35,10 @@ Visit the live website: [https://ristokuy.github.io/Web_Demo/](https://ristokuy.
     ```bash
     cd Web_Demo
     ```
-3. **Install dependencies**:
-    ```bash
-    npm install
-    ```
-4. **Start the development server**:
-    ```bash
-    npm start
-    ```
-
-## Development
-
-- **Build CSS**:
-    ```bash
-    npm run build
-    ```
-- **Watch for CSS changes**:
-    ```bash
-    npm run watch
-    ```
+3. **Open `index.html` in your browser**. No installation or build step is needed.
 
 ## Customization
 
-- **Profile Picture**: Replace the image at `/assets/img/profile.jpeg`.
-- **Theme Icons**: Custom icons for dark/light mode in `/assets/icon/`.
-- **Content**: Update the HTML content in `index.html` to reflect your own information.
-- **Tailwind Config**: Modify the `tailwind.config.js` file to customize the theme.
-
-## License
-
-This project is licensed under the MIT License.
+- **Profile Picture**: Replace the image at `assets/img/profile.jpeg`.
+- **Content**: Update the content directly within `index.html`.
+- **Styling**: All styles are handled by Tailwind CSS classes in `index.html` and a small embedded `<style>` block for custom elements.
