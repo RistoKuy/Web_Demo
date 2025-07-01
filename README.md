@@ -9,20 +9,21 @@ Visit the live website: [https://ristokuy.github.io/Web_Demo/](https://ristokuy.
 ## Features
 
 - **Dark Mode & Light Mode**: Toggle between dark and light themes with visual icon indicators.
-- **Responsive Design**: Adaptable layout for different screen sizes using Tailwind CSS.
+- **Responsive Design**: Adaptable layout for different screen sizes using Tailwind CSS CDN.
 - **Smooth Scrolling**: Smooth transition when navigating to different sections.
 - **Profile Information**: Display profile picture and basic information.
 - **Education**: List of educational qualifications with links.
 - **Experience**: List of professional experiences.
 - **Certifications**: List of certifications with a link to view details.
 - **Contact Information**: Email, phone, GitHub, and LinkedIn links.
+- **Custom CSS File**: All custom styles are now in `style.css` for easier maintenance.
 
 ## Technologies Used
 
 - **HTML**: Structure of the web page.
-- **CSS**: Styling and layout.
-- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+- **Tailwind CSS CDN**: Utility-first CSS framework for rapid UI development (no build step).
 - **JavaScript**: Interactivity and dynamic features.
+- **CSS**: Custom styles in `style.css`.
 
 ## How to Use
 
@@ -34,32 +35,14 @@ Visit the live website: [https://ristokuy.github.io/Web_Demo/](https://ristokuy.
     ```bash
     cd Web_Demo
     ```
-3. **Install dependencies**:
-    ```bash
-    npm install
-    ```
-4. **Start the development server**:
-    ```bash
-    npm start
-    ```
-
-## Development
-
-- **Build CSS**:
-    ```bash
-    npm run build
-    ```
-- **Watch for CSS changes**:
-    ```bash
-    npm run watch
-    ```
+3. **Open `index.html` in your browser** (no build or install needed).
 
 ## Customization
 
 - **Profile Picture**: Replace the image at `/assets/img/profile.jpeg`.
 - **Theme Icons**: Custom icons for dark/light mode in `/assets/icon/`.
 - **Content**: Update the HTML content in `index.html` to reflect your own information.
-- **Tailwind Config**: Modify the `tailwind.config.js` file to customize the theme.
+- **Custom CSS**: Edit the `style.css` file for further customization.
 
 ## License
 
