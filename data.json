@@ -101,7 +101,7 @@
         "Built a responsive web portal prototype with separate interfaces for Patients, Doctors, and Administrators using JavaScript.",
         "Implemented automated conflict-detection algorithms to prevent doctor overbooking and reduce patient wait times."
       ],
-      "tags": ["UML Modeling", "System Analysis", "JavaScript", "HTML5/CSS3", "Algorithm Design"],
+      "tags": ["UML Modeling", "System Analysis", "JavaScript", "HTML/CSS", "Algorithm Design"],
       "link": "https://1drv.ms/b/c/a5bf720936d8def4/IQBjQAVuKwniT7nwC6gIwOErAe3gySlnzyU-7DoUMOl36eE?e=BbXaDF"
     },
     {
@@ -169,7 +169,7 @@
         "Flask REST API & Python",
         "Docker & Docker Compose",
         "n8n Workflow Automation",
-        "HTML5 / CSS3 / JavaScript",
+        "HTML / CSS / JavaScript",
         "IT Support & Troubleshooting"
       ]
     }
