@@ -1,0 +1,154 @@
+{
+  "profile": {
+    "initials": "AB",
+    "name": "Aristo Baadi",
+    "role": "Information Systems",
+    "availability": "Available for Internship (2026 / 2027)",
+    "headline": "System Analyst & Data Analytics Undergraduate | Mercu Buana University",
+    "summary": "Information Systems student with a strong foundation in transforming complex business workflows into scalable technical architectures. Experienced in UML modeling, automated data pipelines, Power BI reporting, and modern AI/LLM integrations.",
+    "location": "West Jakarta, Indonesia",
+    "email": "aristobaadi@example.com",
+    "github": "https://github.com/RistoKuy",
+    "linkedin": "https://linkedin.com/in/aristo-baadi"
+  },
+  "metrics": {
+    "gpa": "3.91",
+    "gpaMax": "4.00",
+    "gpaHonors": "Top Academic Honors",
+    "coreFocus": "System Analysis & BI",
+    "graduation": "Expected 2027"
+  },
+  "projectCategories": [
+    { "id": "all", "label": "All" },
+    { "id": "ai", "label": "AI & Automation" },
+    { "id": "data", "label": "Data Analytics" },
+    { "id": "sys", "label": "System Analysis" }
+  ],
+  "projects": [
+    {
+      "category": "ai",
+      "badge": "AI & Cloud Automation",
+      "badgeColor": "indigo",
+      "title": "Conversational AI Warehouse Management System",
+      "period": "Jun – Jul 2026",
+      "summary": "End-to-end intelligent inventory system utilizing conversational LLM agents, automated webhook workflows, and isolated multi-container architecture.",
+      "highlights": [
+        "Engineered <strong>Flask REST API</strong> and <strong>n8n workflows</strong> integrated with an LLM Agent for real-time stock inquiries and automated logging.",
+        "Orchestrated a decoupled multi-container infrastructure using <strong>Docker Compose</strong> (backend API, web chat UI, and n8n engine).",
+        "Implemented <strong>Pandas</strong> data pipelines to calculate inventory health and generate automated understock trend visual charts.",
+        "Fortified application security with output HTML sanitization (XSS defense) and prompt injection safeguards."
+      ],
+      "tags": ["Flask", "Docker Compose", "n8n Automation", "LLM Agent", "Pandas", "Python"]
+    },
+    {
+      "category": "data",
+      "badge": "Business Intelligence",
+      "badgeColor": "emerald",
+      "title": "Data Analytics & Visualization for Retail Sales",
+      "period": "Apr – Jul 2026",
+      "summary": "Comprehensive exploratory data analysis and executive dashboard development evaluating multi-channel transactional retail data.",
+      "highlights": [
+        "Processed a 990-transaction dataset evaluating revenue, profit margins, discounts, customer tiers, and regional distribution.",
+        "Conducted data wrangling in <strong>Python (Pandas)</strong>: group-based median imputation, date formatting, and margin metric derivations.",
+        "Engineered interactive <strong>Power BI dashboards</strong> with correlation heatmaps, sales trends, and channel performance metrics.",
+        "Formulated actionable business insights identifying top revenue drivers and uncovering discount elasticity patterns."
+      ],
+      "tags": ["Power BI", "Python (Pandas)", "Matplotlib/Seaborn", "Excel", "EDA"]
+    },
+    {
+      "category": "sys",
+      "badge": "OOAD & Web Dev",
+      "badgeColor": "sky",
+      "title": "Object-Oriented Polyclinic Appointment System",
+      "period": "May – Jun 2025",
+      "summary": "Full SDLC system analysis, UML architectural modeling, and functional web prototype for patient appointment scheduling.",
+      "highlights": [
+        "Analyzed polyclinic workflows to eliminate scheduling bottlenecks, defining functional and non-functional requirements.",
+        "Modeled comprehensive system architecture via <strong>UML (Use Case, Activity, Sequence, and Class Diagrams)</strong>.",
+        "Built a responsive web portal prototype with separate interfaces for Patients, Doctors, and Administrators using JavaScript.",
+        "Implemented automated conflict-detection algorithms to prevent doctor overbooking and reduce patient wait times."
+      ],
+      "tags": ["UML Modeling", "System Analysis", "JavaScript", "HTML5/CSS3", "Algorithm Design"]
+    },
+    {
+      "category": "sys",
+      "badge": "Requirements Engineering",
+      "badgeColor": "amber",
+      "title": "Computer Retail Enterprise System Analysis",
+      "period": "Mar – Apr 2025",
+      "summary": "Formal Software Requirement Specification (SKPL) documentation and role-based interface wireframing.",
+      "highlights": [
+        "Collaborated in a 6-member team to author comprehensive <strong>SKPL/SRS</strong> documents detailing sales, order processing, and inventory.",
+        "Constructed full UML behavioral diagrams capturing business workflows for 4 distinct actor profiles.",
+        "Designed modular user interface wireframes for Customers, Sales, Delivery, and Executive Management."
+      ],
+      "tags": ["SKPL / SRS", "Business Process Analysis", "UML Diagrams", "Wireframing"]
+    }
+  ],
+  "skillCategories": [
+    {
+      "title": "Data Analytics & BI",
+      "icon": "bar-chart-2",
+      "color": "sky",
+      "skills": [
+        { "name": "Python (Pandas, Numpy)", "level": "Proficient" },
+        { "name": "Power BI & Looker", "level": "Advanced" },
+        { "name": "Excel & Google Sheets", "level": "Advanced" },
+        { "name": "Data Cleansing & EDA", "level": "Proficient" },
+        { "name": "Data Visualization", "level": "Seaborn / Matplotlib" }
+      ]
+    },
+    {
+      "title": "System Analysis & Design",
+      "icon": "layers",
+      "color": "indigo",
+      "skills": [
+        { "name": "SKPL / SRS Documentation", "level": "Standard" },
+        { "name": "UML Modeling (Use Case, Sequence)", "level": "Proficient" },
+        { "name": "Process Mapping & Flowcharts", "level": "Experienced" },
+        { "name": "UI/UX Wireframing (Figma)", "level": "Intermediate" },
+        { "name": "Agile / Scrum Methodologies", "level": "Applied" }
+      ]
+    },
+    {
+      "title": "Development & Tools",
+      "icon": "terminal",
+      "color": "emerald",
+      "skills": [
+        { "name": "Flask REST API & Python", "level": "Backend" },
+        { "name": "Docker & Docker Compose", "level": "Container" },
+        { "name": "n8n Workflow Automation", "level": "Integration" },
+        { "name": "HTML5 / CSS3 / JavaScript", "level": "Frontend" },
+        { "name": "IT Support & Troubleshooting", "level": "Hardware / Network" }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Technician & Inventory Committee",
+      "organization": "Mercu Buana English Club",
+      "period": "2024 – 2025",
+      "highlights": [
+        "Administered Windows OS environments, AV equipment, and IT hardware to ensure high stability during campus events.",
+        "Diagnosed and resolved networking, laptop, and projection malfunctions under fast-paced event conditions.",
+        "Maintained structured organizational inventory databases, streamlining resource tracking and asset allocation."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Mercu Buana University",
+      "degree": "Bachelor of Science in Information Systems",
+      "period": "2023 – 2027",
+      "gpa": "3.91 / 4.00",
+      "honors": "Top Academic Honors",
+      "coursework": "System Analysis & Design, Database Architecture, Business Intelligence, Object-Oriented Modeling, Software Engineering."
+    }
+  ],
+  "contact": {
+    "title": "Ready to collaborate on innovative projects?",
+    "description": "Seeking internship roles in System Analysis, Business Analysis, Data Analytics, or AI Engineering. Let's connect!",
+    "email": "aristobaadi@example.com",
+    "linkedin": "https://linkedin.com/in/aristo-baadi"
+  }
+}
