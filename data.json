@@ -1,4 +1,14 @@
 {
+  "meta": {
+    "title": "Aristo Baadi - CV & Professional Profile"
+  },
+  "navigation": [
+    { "label": "About", "href": "#about" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Skills", "href": "#skills" },
+    { "label": "Experience", "href": "#experience" },
+    { "label": "Education", "href": "#education" }
+  ],
   "profile": {
     "initials": "AB",
     "name": "Aristo Baadi",
@@ -17,6 +27,26 @@
     "gpaHonors": "Top Academic Honors",
     "coreFocus": "System Analysis & BI",
     "graduation": "Expected 2027"
+  },
+  "sectionHeaders": {
+    "projects": {
+      "title": "Featured Academic & Technical Projects",
+      "subtitle": "Interactive prototypes, system analysis models, and analytics workflows",
+      "icon": "folder-git-2"
+    },
+    "skills": {
+      "title": "Technical Skills & Competencies",
+      "subtitle": "Structured skill matrix categorized for ATS scanning and technical screening",
+      "icon": "cpu"
+    },
+    "experience": {
+      "title": "Leadership & Experience",
+      "icon": "briefcase"
+    },
+    "education": {
+      "title": "Education",
+      "icon": "graduation-cap"
+    }
   },
   "projectCategories": [
     { "id": "all", "label": "All" },

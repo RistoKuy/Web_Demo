@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aristo Baadi - CV & Professional Profile</title>
+  <title>Loading...</title>
   <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,22 +74,14 @@
   <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-800 no-print">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <div class="flex items-center space-x-3">
-        <div id="navInitials" class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-600 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-sm">
-          AB
-        </div>
+        <div id="navInitials" class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-600 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-sm"></div>
         <div>
-          <span id="navName" class="font-bold text-lg tracking-tight block">Aristo Baadi</span>
-          <span id="navRole" class="text-xs text-sky-600 dark:text-sky-400 font-medium">Information Systems</span>
+          <span id="navName" class="font-bold text-lg tracking-tight block"></span>
+          <span id="navRole" class="text-xs text-sky-600 dark:text-sky-400 font-medium"></span>
         </div>
       </div>
 
-      <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium">
-        <a href="#about" class="px-3 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition">About</a>
-        <a href="#projects" class="px-3 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition">Projects</a>
-        <a href="#skills" class="px-3 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition">Skills</a>
-        <a href="#experience" class="px-3 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition">Experience</a>
-        <a href="#education" class="px-3 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition">Education</a>
-      </nav>
+      <nav id="navLinks" class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium"></nav>
 
       <div class="flex items-center space-x-2">
         <button onclick="window.print()" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-sky-600 hover:bg-sky-700 text-white shadow-sm transition">
@@ -109,98 +101,67 @@
     <!-- Hero Section -->
     <section id="about" class="pt-4 sm:pt-8">
       <div id="heroContainer" class="bg-gradient-to-br from-white to-slate-100 dark:from-slate-900 dark:to-slate-800/60 rounded-3xl p-6 sm:p-10 border border-slate-200 dark:border-slate-800 shadow-sm relative overflow-hidden">
-        <!-- Injected from data.json -->
+        <!-- Rendered from data.json -->
       </div>
     </section>
 
     <!-- Technical Projects Section -->
     <section id="projects" class="space-y-6">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-4">
-        <div>
-          <h2 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-            <i data-lucide="folder-git-2" class="w-6 h-6 text-sky-600 dark:text-sky-400"></i>
-            <span>Featured Academic & Technical Projects</span>
-          </h2>
-          <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Interactive prototypes, system analysis models, and analytics workflows</p>
-        </div>
-
-        <!-- Filter Tags -->
-        <div class="flex flex-wrap gap-1.5 no-print" id="projectFilter">
-          <!-- Filter buttons injected dynamically -->
-        </div>
+      <div id="projectsHeader" class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-4">
+        <!-- Rendered from data.json -->
       </div>
-
-      <!-- Project Cards Grid -->
       <div id="projectGrid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Project cards injected dynamically -->
+        <!-- Rendered from data.json -->
       </div>
     </section>
 
     <!-- Skills Matrix Section -->
     <section id="skills" class="space-y-6">
-      <div class="border-b border-slate-200 dark:border-slate-800 pb-4">
-        <h2 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-          <i data-lucide="cpu" class="w-6 h-6 text-sky-600 dark:text-sky-400"></i>
-          <span>Technical Skills & Competencies</span>
-        </h2>
-        <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Structured skill matrix categorized for ATS scanning and technical screening</p>
+      <div id="skillsHeader" class="border-b border-slate-200 dark:border-slate-800 pb-4">
+        <!-- Rendered from data.json -->
       </div>
-
       <div id="skillsGrid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Skill categories injected dynamically -->
+        <!-- Rendered from data.json -->
       </div>
     </section>
 
     <!-- Experience & Education Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
       <!-- Experience Section -->
       <section id="experience" class="space-y-6">
-        <div class="border-b border-slate-200 dark:border-slate-800 pb-4">
-          <h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-            <i data-lucide="briefcase" class="w-5 h-5 text-sky-600 dark:text-sky-400"></i>
-            <span>Leadership & Experience</span>
-          </h2>
+        <div id="experienceHeader" class="border-b border-slate-200 dark:border-slate-800 pb-4">
+          <!-- Rendered from data.json -->
         </div>
-
         <div id="experienceContainer" class="space-y-4">
-          <!-- Experience items injected dynamically -->
+          <!-- Rendered from data.json -->
         </div>
       </section>
 
       <!-- Education Section -->
       <section id="education" class="space-y-6">
-        <div class="border-b border-slate-200 dark:border-slate-800 pb-4">
-          <h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-            <i data-lucide="graduation-cap" class="w-5 h-5 text-sky-600 dark:text-sky-400"></i>
-            <span>Education</span>
-          </h2>
+        <div id="educationHeader" class="border-b border-slate-200 dark:border-slate-800 pb-4">
+          <!-- Rendered from data.json -->
         </div>
-
         <div id="educationContainer" class="space-y-4">
-          <!-- Education items injected dynamically -->
+          <!-- Rendered from data.json -->
         </div>
       </section>
-
     </div>
 
     <!-- Contact CTA Section -->
     <section id="contact" class="bg-gradient-to-r from-sky-600 to-indigo-700 rounded-3xl p-8 sm:p-12 text-white shadow-lg text-center space-y-6 no-print">
-      <!-- Contact CTA injected dynamically -->
+      <!-- Rendered from data.json -->
     </section>
 
   </main>
 
   <!-- Footer -->
   <footer class="border-t border-slate-200 dark:border-slate-800 py-6 text-center text-xs text-slate-500 dark:text-slate-400 no-print">
-    <div class="max-w-6xl mx-auto px-4" id="footerText">
-      &copy; 2026 Aristo Baadi. Built with HTML5 & Tailwind CSS CDN.
-    </div>
+    <div class="max-w-6xl mx-auto px-4" id="footerText"></div>
   </footer>
 
-  <!-- Modular JSON Loader & Interactive Scripts -->
+  <!-- Modular JSON Engine -->
   <script>
-    // SVGs for brand icons not present in standard Lucide
     const SVG_ICONS = {
       github: `<svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>`,
       linkedin: `<svg class="w-4 h-4 fill-current text-sky-600 dark:text-sky-400" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>`,
@@ -215,38 +176,40 @@
     };
 
     function renderCV(data) {
-      // 1. Navigation & Header
-      if (data.profile) {
-        document.getElementById('navInitials').textContent = data.profile.initials || 'AB';
-        document.getElementById('navName').textContent = data.profile.name || '';
-        document.getElementById('navRole').textContent = data.profile.role || '';
-        document.title = `${data.profile.name} - CV & Professional Profile`;
-        document.getElementById('footerText').innerHTML = `&copy; ${new Date().getFullYear()} ${data.profile.name}. Built with HTML5, Tailwind CSS CDN & JSON data module.`;
+      // 1. Meta & Header Nav
+      if (data.meta?.title) document.title = data.meta.title;
+      
+      const p = data.profile || {};
+      const m = data.metrics || {};
+      const sh = data.sectionHeaders || {};
+
+      document.getElementById('navInitials').textContent = p.initials || '';
+      document.getElementById('navName').textContent = p.name || '';
+      document.getElementById('navRole').textContent = p.role || '';
+      document.getElementById('footerText').innerHTML = `&copy; ${new Date().getFullYear()} ${p.name || ''}. Built with HTML5, Tailwind CSS CDN & JSON data module.`;
+
+      if (data.navigation) {
+        document.getElementById('navLinks').innerHTML = data.navigation.map(n => `
+          <a href="${n.href}" class="px-3 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition">${n.label}</a>
+        `).join('');
       }
 
       // 2. Hero Section
-      const p = data.profile || {};
-      const m = data.metrics || {};
       document.getElementById('heroContainer').innerHTML = `
         <div class="absolute -right-16 -top-16 w-64 h-64 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
           <div class="lg:col-span-8 space-y-4">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 text-xs font-semibold border border-emerald-200 dark:border-emerald-800/60">
               <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              ${p.availability || 'Available for Opportunities'}
+              ${p.availability || ''}
             </div>
             
             <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">
               Hi, I'm <span class="bg-gradient-to-r from-sky-600 to-indigo-600 bg-clip-text text-transparent">${p.name || ''}</span>
             </h1>
             
-            <p class="text-lg text-slate-600 dark:text-slate-300 font-medium">
-              ${p.headline || ''}
-            </p>
-            
-            <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
-              ${p.summary || ''}
-            </p>
+            <p class="text-lg text-slate-600 dark:text-slate-300 font-medium">${p.headline || ''}</p>
+            <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">${p.summary || ''}</p>
 
             <div class="flex flex-wrap gap-3 pt-2 text-sm">
               ${p.linkedin ? `
@@ -275,18 +238,18 @@
           <div class="lg:col-span-4 bg-white dark:bg-slate-800/90 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm space-y-5">
             <div class="border-b border-slate-100 dark:border-slate-700 pb-3">
               <div class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Cumulative GPA</div>
-              <div class="text-4xl font-black text-sky-600 dark:text-sky-400 mt-1">${m.gpa || '3.91'} <span class="text-base text-slate-400 font-normal">/ ${m.gpaMax || '4.00'}</span></div>
-              <div class="text-xs text-emerald-600 dark:text-emerald-400 font-medium mt-0.5">${m.gpaHonors || 'Top Academic Honors'}</div>
+              <div class="text-4xl font-black text-sky-600 dark:text-sky-400 mt-1">${m.gpa || ''} <span class="text-base text-slate-400 font-normal">/ ${m.gpaMax || '4.00'}</span></div>
+              <div class="text-xs text-emerald-600 dark:text-emerald-400 font-medium mt-0.5">${m.gpaHonors || ''}</div>
             </div>
 
             <div class="grid grid-cols-2 gap-4">
               <div>
                 <div class="text-xs text-slate-400 font-semibold">Core Focus</div>
-                <div class="text-sm font-bold text-slate-800 dark:text-slate-200 mt-1">${m.coreFocus || 'System Analysis & BI'}</div>
+                <div class="text-sm font-bold text-slate-800 dark:text-slate-200 mt-1">${m.coreFocus || ''}</div>
               </div>
               <div>
                 <div class="text-xs text-slate-400 font-semibold">Graduation</div>
-                <div class="text-sm font-bold text-slate-800 dark:text-slate-200 mt-1">${m.graduation || 'Expected 2027'}</div>
+                <div class="text-sm font-bold text-slate-800 dark:text-slate-200 mt-1">${m.graduation || ''}</div>
               </div>
             </div>
 
@@ -300,123 +263,138 @@
         </div>
       `;
 
-      // 3. Project Filter Tags
-      const filterContainer = document.getElementById('projectFilter');
-      if (data.projectCategories) {
-        filterContainer.innerHTML = data.projectCategories.map((cat, idx) => `
-          <button data-filter="${cat.id}" class="filter-btn ${idx === 0 ? 'active bg-sky-600 text-white' : 'bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-700'} px-3 py-1 text-xs font-semibold rounded-full transition">
-            ${cat.label}
-          </button>
-        `).join('');
-      }
+      // 3. Projects Section Header & Cards
+      const projH = sh.projects || {};
+      document.getElementById('projectsHeader').innerHTML = `
+        <div>
+          <h2 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+            <i data-lucide="${projH.icon || 'folder-git-2'}" class="w-6 h-6 text-sky-600 dark:text-sky-400"></i>
+            <span>${projH.title || ''}</span>
+          </h2>
+          ${projH.subtitle ? `<p class="text-sm text-slate-500 dark:text-slate-400 mt-1">${projH.subtitle}</p>` : ''}
+        </div>
+        <div class="flex flex-wrap gap-1.5 no-print" id="projectFilter">
+          ${(data.projectCategories || []).map((cat, idx) => `
+            <button data-filter="${cat.id}" class="filter-btn ${idx === 0 ? 'active bg-sky-600 text-white' : 'bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-700'} px-3 py-1 text-xs font-semibold rounded-full transition">
+              ${cat.label}
+            </button>
+          `).join('')}
+        </div>
+      `;
 
-      // 4. Project Cards Grid
-      const projectGrid = document.getElementById('projectGrid');
-      if (data.projects) {
-        projectGrid.innerHTML = data.projects.map(proj => `
-          <div class="project-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm hover:border-sky-500/50 dark:hover:border-sky-500/50 transition flex flex-col justify-between" data-category="${proj.category}">
-            <div class="space-y-4">
-              <div class="flex items-start justify-between gap-2">
-                <div>
-                  <span class="inline-block px-2.5 py-0.5 text-xs font-bold rounded-md border mb-2 ${BADGE_COLORS[proj.badgeColor] || BADGE_COLORS.sky}">
-                    ${proj.badge}
-                  </span>
-                  <h3 class="font-bold text-lg text-slate-900 dark:text-white">${proj.title}</h3>
-                </div>
-                <span class="text-xs text-slate-400 font-medium whitespace-nowrap">${proj.period}</span>
-              </div>
-              
-              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                ${proj.summary}
-              </p>
-
-              <ul class="text-xs text-slate-600 dark:text-slate-300 space-y-2 list-disc list-inside">
-                ${proj.highlights.map(h => `<li>${h}</li>`).join('')}
-              </ul>
-            </div>
-
-            <div class="pt-5 mt-4 border-t border-slate-100 dark:border-slate-800 flex flex-wrap gap-1.5">
-              ${proj.tags.map(tag => `<span class="tech-tag">${tag}</span>`).join('')}
-            </div>
-          </div>
-        `).join('');
-      }
-
-      // 5. Skills Grid
-      const skillsGrid = document.getElementById('skillsGrid');
-      if (data.skillCategories) {
-        skillsGrid.innerHTML = data.skillCategories.map(cat => `
-          <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 space-y-4 shadow-sm">
-            <div class="flex items-center gap-3 text-${cat.color}-600 dark:text-${cat.color}-400 font-bold">
-              <div class="p-2 rounded-lg bg-${cat.color}-50 dark:bg-slate-800">
-                <i data-lucide="${cat.icon}" class="w-5 h-5"></i>
-              </div>
-              <h3>${cat.title}</h3>
-            </div>
-            <div class="space-y-2 text-sm text-slate-600 dark:text-slate-300">
-              ${cat.skills.map((s, idx) => `
-                <div class="flex justify-between items-center py-1 ${idx < cat.skills.length - 1 ? 'border-b border-slate-100 dark:border-slate-800' : ''}">
-                  <span>${s.name}</span>
-                  <span class="px-2 py-0.5 text-xs font-semibold rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">${s.level}</span>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-        `).join('');
-      }
-
-      // 6. Experience
-      const expContainer = document.getElementById('experienceContainer');
-      if (data.experience) {
-        expContainer.innerHTML = data.experience.map(exp => `
-          <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm space-y-4">
-            <div class="flex justify-between items-start">
+      document.getElementById('projectGrid').innerHTML = (data.projects || []).map(proj => `
+        <div class="project-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm hover:border-sky-500/50 dark:hover:border-sky-500/50 transition flex flex-col justify-between" data-category="${proj.category}">
+          <div class="space-y-4">
+            <div class="flex items-start justify-between gap-2">
               <div>
-                <h3 class="font-bold text-slate-900 dark:text-white">${exp.role}</h3>
-                <div class="text-sm font-medium text-sky-600 dark:text-sky-400">${exp.organization}</div>
+                <span class="inline-block px-2.5 py-0.5 text-xs font-bold rounded-md border mb-2 ${BADGE_COLORS[proj.badgeColor] || BADGE_COLORS.sky}">
+                  ${proj.badge}
+                </span>
+                <h3 class="font-bold text-lg text-slate-900 dark:text-white">${proj.title}</h3>
               </div>
-              <span class="text-xs px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-semibold">${exp.period}</span>
+              <span class="text-xs text-slate-400 font-medium whitespace-nowrap">${proj.period}</span>
             </div>
-
-            <ul class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-2 list-disc list-inside">
-              ${exp.highlights.map(h => `<li>${h}</li>`).join('')}
+            
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">${proj.summary}</p>
+            <ul class="text-xs text-slate-600 dark:text-slate-300 space-y-2 list-disc list-inside">
+              ${proj.highlights.map(h => `<li>${h}</li>`).join('')}
             </ul>
           </div>
-        `).join('');
-      }
 
-      // 7. Education
-      const eduContainer = document.getElementById('educationContainer');
-      if (data.education) {
-        eduContainer.innerHTML = data.education.map(edu => `
-          <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm space-y-4">
-            <div class="flex justify-between items-start">
-              <div>
-                <h3 class="font-bold text-slate-900 dark:text-white">${edu.institution}</h3>
-                <div class="text-sm font-medium text-slate-600 dark:text-slate-400">${edu.degree}</div>
-              </div>
-              <span class="text-xs px-2.5 py-1 rounded-md bg-sky-50 dark:bg-sky-950 text-sky-700 dark:text-sky-300 font-semibold border border-sky-200 dark:border-sky-800">${edu.period}</span>
-            </div>
-
-            <div class="flex items-center justify-between p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-700/50">
-              <span class="text-xs font-semibold text-slate-600 dark:text-slate-300">Cumulative GPA</span>
-              <span class="text-sm font-extrabold text-sky-600 dark:text-sky-400">${edu.gpa}</span>
-            </div>
-
-            <div class="text-xs text-slate-500 dark:text-slate-400">
-              <span class="font-semibold text-slate-700 dark:text-slate-300">Key Coursework:</span> ${edu.coursework}
-            </div>
+          <div class="pt-5 mt-4 border-t border-slate-100 dark:border-slate-800 flex flex-wrap gap-1.5">
+            ${proj.tags.map(tag => `<span class="tech-tag">${tag}</span>`).join('')}
           </div>
-        `).join('');
-      }
+        </div>
+      `).join('');
 
-      // 8. Contact Section
+      // 4. Skills Section
+      const skillH = sh.skills || {};
+      document.getElementById('skillsHeader').innerHTML = `
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+          <i data-lucide="${skillH.icon || 'cpu'}" class="w-6 h-6 text-sky-600 dark:text-sky-400"></i>
+          <span>${skillH.title || ''}</span>
+        </h2>
+        ${skillH.subtitle ? `<p class="text-sm text-slate-500 dark:text-slate-400 mt-1">${skillH.subtitle}</p>` : ''}
+      `;
+
+      document.getElementById('skillsGrid').innerHTML = (data.skillCategories || []).map(cat => `
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 space-y-4 shadow-sm">
+          <div class="flex items-center gap-3 text-${cat.color}-600 dark:text-${cat.color}-400 font-bold">
+            <div class="p-2 rounded-lg bg-${cat.color}-50 dark:bg-slate-800">
+              <i data-lucide="${cat.icon}" class="w-5 h-5"></i>
+            </div>
+            <h3>${cat.title}</h3>
+          </div>
+          <div class="space-y-2 text-sm text-slate-600 dark:text-slate-300">
+            ${cat.skills.map((s, idx) => `
+              <div class="flex justify-between items-center py-1 ${idx < cat.skills.length - 1 ? 'border-b border-slate-100 dark:border-slate-800' : ''}">
+                <span>${s.name}</span>
+                <span class="px-2 py-0.5 text-xs font-semibold rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">${s.level}</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `).join('');
+
+      // 5. Experience Section
+      const expH = sh.experience || {};
+      document.getElementById('experienceHeader').innerHTML = `
+        <h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+          <i data-lucide="${expH.icon || 'briefcase'}" class="w-5 h-5 text-sky-600 dark:text-sky-400"></i>
+          <span>${expH.title || ''}</span>
+        </h2>
+      `;
+
+      document.getElementById('experienceContainer').innerHTML = (data.experience || []).map(exp => `
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm space-y-4">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="font-bold text-slate-900 dark:text-white">${exp.role}</h3>
+              <div class="text-sm font-medium text-sky-600 dark:text-sky-400">${exp.organization}</div>
+            </div>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-semibold">${exp.period}</span>
+          </div>
+          <ul class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-2 list-disc list-inside">
+            ${exp.highlights.map(h => `<li>${h}</li>`).join('')}
+          </ul>
+        </div>
+      `).join('');
+
+      // 6. Education Section
+      const eduH = sh.education || {};
+      document.getElementById('educationHeader').innerHTML = `
+        <h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+          <i data-lucide="${eduH.icon || 'graduation-cap'}" class="w-5 h-5 text-sky-600 dark:text-sky-400"></i>
+          <span>${eduH.title || ''}</span>
+        </h2>
+      `;
+
+      document.getElementById('educationContainer').innerHTML = (data.education || []).map(edu => `
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm space-y-4">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="font-bold text-slate-900 dark:text-white">${edu.institution}</h3>
+              <div class="text-sm font-medium text-slate-600 dark:text-slate-400">${edu.degree}</div>
+            </div>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-sky-50 dark:bg-sky-950 text-sky-700 dark:text-sky-300 font-semibold border border-sky-200 dark:border-sky-800">${edu.period}</span>
+          </div>
+
+          <div class="flex items-center justify-between p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-700/50">
+            <span class="text-xs font-semibold text-slate-600 dark:text-slate-300">Cumulative GPA</span>
+            <span class="text-sm font-extrabold text-sky-600 dark:text-sky-400">${edu.gpa}</span>
+          </div>
+
+          <div class="text-xs text-slate-500 dark:text-slate-400">
+            <span class="font-semibold text-slate-700 dark:text-slate-300">Key Coursework:</span> ${edu.coursework}
+          </div>
+        </div>
+      `).join('');
+
+      // 7. Contact CTA Section
       const c = data.contact || {};
       document.getElementById('contact').innerHTML = `
-        <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight">${c.title || "Ready to collaborate?"}</h2>
-        <p class="max-w-2xl mx-auto text-sky-100 text-sm sm:text-base">
-          ${c.description || ""}
-        </p>
+        <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight">${c.title || ""}</h2>
+        <p class="max-w-2xl mx-auto text-sky-100 text-sm sm:text-base">${c.description || ""}</p>
         <div class="flex flex-wrap justify-center gap-4 pt-2">
           ${c.email ? `
           <a href="mailto:${c.email}" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-slate-900 font-bold text-sm hover:bg-sky-50 transition shadow-sm">
@@ -431,7 +409,7 @@
         </div>
       `;
 
-      // Re-init lucide icons and filter bindings
+      // Icons & Filters
       lucide.createIcons();
       bindFilterEvents();
     }
@@ -481,9 +459,7 @@
         return response.json();
       })
       .then(data => renderCV(data))
-      .catch(err => {
-        console.error('Failed to load data.json:', err);
-      });
+      .catch(err => console.error('Failed to load data.json:', err));
   </script>
 </body>
 </html>
