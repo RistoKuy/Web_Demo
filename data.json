@@ -121,11 +121,11 @@
       "icon": "bar-chart-2",
       "color": "sky",
       "skills": [
-        { "name": "Python (Pandas, Numpy)", "level": "Proficient" },
-        { "name": "Power BI & Looker", "level": "Advanced" },
-        { "name": "Excel & Google Sheets", "level": "Advanced" },
-        { "name": "Data Cleansing & EDA", "level": "Proficient" },
-        { "name": "Data Visualization", "level": "Seaborn / Matplotlib" }
+        "Python (Pandas, Numpy)",
+        "Power BI & Looker",
+        "Excel & Google Sheets",
+        "Data Cleansing & EDA",
+        "Data Visualization (Seaborn / Matplotlib)"
       ]
     },
     {
@@ -133,11 +133,11 @@
       "icon": "layers",
       "color": "indigo",
       "skills": [
-        { "name": "SKPL / SRS Documentation", "level": "Standard" },
-        { "name": "UML Modeling (Use Case, Sequence)", "level": "Proficient" },
-        { "name": "Process Mapping & Flowcharts", "level": "Experienced" },
-        { "name": "UI/UX Wireframing (Figma)", "level": "Intermediate" },
-        { "name": "Agile / Scrum Methodologies", "level": "Applied" }
+        "SKPL / SRS Documentation",
+        "UML Modeling (Use Case, Sequence)",
+        "Process Mapping & Flowcharts",
+        "UI/UX Wireframing (Figma)",
+        "Agile / Scrum Methodologies"
       ]
     },
     {
@@ -145,11 +145,11 @@
       "icon": "terminal",
       "color": "emerald",
       "skills": [
-        { "name": "Flask REST API & Python", "level": "Backend" },
-        { "name": "Docker & Docker Compose", "level": "Container" },
-        { "name": "n8n Workflow Automation", "level": "Integration" },
-        { "name": "HTML5 / CSS3 / JavaScript", "level": "Frontend" },
-        { "name": "IT Support & Troubleshooting", "level": "Hardware / Network" }
+        "Flask REST API & Python",
+        "Docker & Docker Compose",
+        "n8n Workflow Automation",
+        "HTML5 / CSS3 / JavaScript",
+        "IT Support & Troubleshooting"
       ]
     }
   ],
