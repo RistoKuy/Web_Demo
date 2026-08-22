@@ -36,7 +36,7 @@
     },
     "skills": {
       "title": "Technical Skills & Competencies",
-      "subtitle": "Structured skill matrix categorized for ATS scanning and technical screening",
+      "subtitle": "Structured skill matrix categorized for technical screening",
       "icon": "cpu"
     },
     "experience": {
@@ -68,7 +68,8 @@
         "Implemented <strong>Pandas</strong> data pipelines to calculate inventory health and generate automated understock trend visual charts.",
         "Fortified application security with output HTML sanitization (XSS defense) and prompt injection safeguards."
       ],
-      "tags": ["Flask", "Docker Compose", "n8n Automation", "LLM Agent", "Pandas", "Python"]
+      "tags": ["Flask", "Docker Compose", "n8n Automation", "LLM Agent", "Pandas", "Python"],
+      "link": "https://github.com/RistoKuy/warehouse_bot"
     },
     {
       "category": "data",
@@ -83,7 +84,8 @@
         "Engineered interactive <strong>Power BI dashboards</strong> with correlation heatmaps, sales trends, and channel performance metrics.",
         "Formulated actionable business insights identifying top revenue drivers and uncovering discount elasticity patterns."
       ],
-      "tags": ["Power BI", "Python (Pandas)", "Matplotlib/Seaborn", "Excel", "EDA"]
+      "tags": ["Power BI", "Python (Pandas)", "Matplotlib/Seaborn", "Excel", "EDA"],
+      "link": "https://1drv.ms/f/c/a5bf720936d8def4/IgDWTSzrflADRpZQ4MgP5Bb4AVzW9DrDaFyeYJ6vuGu86fU?e=SnOIVf"
     },
     {
       "category": "sys",
@@ -98,7 +100,8 @@
         "Built a responsive web portal prototype with separate interfaces for Patients, Doctors, and Administrators using JavaScript.",
         "Implemented automated conflict-detection algorithms to prevent doctor overbooking and reduce patient wait times."
       ],
-      "tags": ["UML Modeling", "System Analysis", "JavaScript", "HTML5/CSS3", "Algorithm Design"]
+      "tags": ["UML Modeling", "System Analysis", "JavaScript", "HTML5/CSS3", "Algorithm Design"],
+      "link": "https://1drv.ms/b/c/a5bf720936d8def4/IQBjQAVuKwniT7nwC6gIwOErAe3gySlnzyU-7DoUMOl36eE?e=BbXaDF"
     },
     {
       "category": "sys",
@@ -112,7 +115,24 @@
         "Constructed full UML behavioral diagrams capturing business workflows for 4 distinct actor profiles.",
         "Designed modular user interface wireframes for Customers, Sales, Delivery, and Executive Management."
       ],
-      "tags": ["SKPL / SRS", "Business Process Analysis", "UML Diagrams", "Wireframing"]
+      "tags": ["SKPL / SRS", "Business Process Analysis", "UML Diagrams", "Wireframing"],
+      "link": "https://1drv.ms/b/c/a5bf720936d8def4/IQBUrVubQ8l0QZbbUWsBjx_4AWEN8itFQ96qlN-bPtMJHCE?e=eEkbFg"
+    },
+    {
+      "category": "sys",
+      "badge": "UI/UX & Prototyping",
+      "badgeColor": "rose",
+      "title": "UI/UX Design Proposal for Digital Reading Platform",
+      "period": "Oct – Dec 2024",
+      "summary": "Iterative UI/UX design proposal and interactive prototyping for a digital comic and novel platform.",
+      "highlights": [
+        "Collaborated in a 6-member student team utilizing <strong>Agile methodology</strong> and <strong>Figma</strong> for iterative design.",
+        "Conducted competitive analysis and SWOT evaluation benchmarking platforms like <strong>Webtoon and Wattpad</strong> to drive intuitive navigation.",
+        "Created low-fidelity and high-fidelity wireframes for login, landing, bookmarks, and community forums focusing on minimalist UX.",
+        "Designed user flows, color systems, and clickable prototypes addressing copyright compliance and community engagement."
+      ],
+      "tags": ["Figma", "UI/UX Design", "Wireframing", "Agile / Scrum", "SWOT Analysis", "Prototyping"],
+      "link": "https://1drv.ms/b/c/a5bf720936d8def4/IQDLqepScsA3RpYV5m_mEiAJAYNyOvuXHx1Fsn6eZsRWjlg?e=WbmwKB"
     }
   ],
   "skillCategories": [
